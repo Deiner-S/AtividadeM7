@@ -90,9 +90,21 @@ public class Automoveis {
 	
 	
 	/**
-	 * 
+	 * <p>Cauculando tempo de deslocamento dada uma velocidade e uma distancia</p>
+	 * <br>
+	 * <ol>
+	 * 		<li>Verifica se a velociade imposta é suportada pelo carro</li>
+	 * 		<li>Divide a distancia pelo tempo</li>
+	 *  	<li>Retorna valor da divisão</li>
+	 * 		
+	 * </ol>
+	 * <br>
+	 * <p>unidades de media utilizadas: km/h para velocidade e km para distancia</p>
+	 *
+	 *
+	 * @return retorna o tempo gasto no percurso 
 	 */	
-	public int deslocamentoPontoAPonto(int velocidade, int distancia) {
+	public int deslocamento(int velocidade, int distancia) {
 		
 		if(velocidade > this.velocidadeMaxima){
 			

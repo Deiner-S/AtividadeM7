@@ -22,6 +22,8 @@ public class Main {
 		carro1.setVelocidadeMaxima(157);
 		carro1.setConsumo(10);
 		
+		System.out.println("O tempo estimado será de " + carro1.deslocamento(200, 500) + " horas");
+		
 		
 	}
 
