@@ -21,8 +21,12 @@ public class Main {
 		carro1.setPortas(4);
 		carro1.setVelocidadeMaxima(157);
 		carro1.setConsumo(10);
+		carro1.setTanque(54);
 		
-		System.out.println("O tempo estimado será de " + carro1.deslocamento(200, 500) + " horas");
+		
+		
+		System.out.println("O tempo estimado será de " + carro1.deslocamento(200, 500) + " horas\n");
+		System.out.println("O consumo medio da viagem é de: " + carro1.consumoPorKm(700) + " litros");
 		
 		
 	}

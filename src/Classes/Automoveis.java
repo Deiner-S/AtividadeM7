@@ -16,6 +16,7 @@ public class Automoveis {
 	private int portas;
 	private int velocidadeMaxima;
 	private int consumo;
+	private int tanque;
 	
 	
 	//=====================================
@@ -79,13 +80,23 @@ public class Automoveis {
 	
 	//=====================================
 		//	get/set Potencia
-		public int getConsumo(){
-			return consumo;
-		}
+	public int getConsumo(){
+		return consumo;
+	}
 		
-		public void setConsumo(int consumo){
-			this.consumo = consumo;
-		}
+	public void setConsumo(int consumo){
+		this.consumo = consumo;
+	}
+	
+	//=====================================
+	//	get/set Potencia
+	public int getTanque(){
+		return tanque;
+	}
+			
+	public void setTanque(int tanque){
+		this.tanque = tanque;
+	}
 	
 	
 	
@@ -115,6 +126,16 @@ public class Automoveis {
 		return distancia / velocidade; 
 		
 		
+	}
+	
+	
+	public int consumoPorKm(int distancia) {
+		
+		if(this.tanque < distancia / this.consumo) {			
+				
+			System.out.println("Para está viagem é necessário  mais do que um tanque cheio seu veiculo possui uma capacidade máxima de "+ this.tanque + " litros\n");
+		}
+		return distancia / this.consumo;
 	}
 	
 	
